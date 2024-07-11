@@ -1,0 +1,44 @@
+/*
+* { Universal selector
+    font-family: monospace;
+}
+*/
+
+html{
+    font-size: 22px;
+}
+
+body { /*Apply to element HTML Elements*/
+    font-size: inherit; /*Inherits properties from parent element*/
+}
+
+main{
+    font-family: monospace;
+}
+
+h1, h2{ /*Apply to multiple HTML Elements*/
+    color: blue;
+}
+
+h3{
+    color: rgb(136, 119, 26);
+}
+
+ol li{ /*Apply to nested elements based on hierarchy HTML Elements*/
+    text-transform: uppercase;
+    color: brown;
+}
+
+p{
+    color: rgb(50, 50, 158);
+}
+
+.despise{ /*Apply to class Elements*/
+    font-style: italic;
+    color: gray;
+}
+
+#worstOrBest{ /*Apply to elements with specific id*/
+    font-size: 30px;
+    color: red;
+}
