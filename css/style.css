@@ -10,6 +10,9 @@ html{
 
 body { /*Apply to element HTML Elements*/
     font-size: inherit; /*Inherits properties from parent element*/
+    min-height: 100vh;
+    background-color: #ffefd5;
+    color: rgb(0, 0, 0);
 }
 
 main{
@@ -17,6 +20,10 @@ main{
 }
 
 h1, h2{ /*Apply to multiple HTML Elements*/
+    border: 2px dashed red;
+    width: 50%; /*Takes % size of respective parent*/
+    font-size: 3rem;
+    padding: 0.5em;
     color: blue;
 }
 
@@ -26,15 +33,23 @@ h3{
 
 ol li{ /*Apply to nested elements based on hierarchy HTML Elements*/
     text-transform: uppercase;
-    color: brown;
+    color: #808088;
 }
 
 p{
-    color: rgb(50, 50, 158);
+    font-size: 32px; /*n px = absolute fixed size*/
+    color: #32329e;
+    
+    width: 20ch; /*Set how many characters per line*/
+}
+
+.info-lists{
+    font-size: 2rem;
 }
 
 .despise{ /*Apply to class Elements*/
     font-style: italic;
+    font-size: 1em;
     color: gray;
 }
 
