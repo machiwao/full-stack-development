@@ -4,7 +4,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}  
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+/* a:visited{
+    color: purple;
+} */
+
+a:hover, a:focus{
+    color: dodgerblue;
+    opacity: 0.8;
+    background: gold;
+}
+
+a:active{
+    color: red;
+}
 
 html{
     font-size: 22px;
@@ -46,8 +66,27 @@ h3{
 }
 
 ol li{ /*Apply to nested elements based on hierarchy HTML Elements*/
+    list-style-type: none;
+    padding: 0;
     text-transform: uppercase;
     color: #808088;
+}
+
+ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: blue;
+    line-height: 1.6;
+}
+
+ul li:nth-child(even){
+    color: green;
+}
+
+ul ::marker{
+    color: black;
+    content: "Interest: ";
 }
 
 p{
@@ -58,7 +97,6 @@ p{
     text-indent: 2em;
     text-align: justify;
     text-transform: uppercase;
-    text-decoration: underline;
     width: 20ch; /*Set how many characters per line*/
     font-weight: bold;
 }
