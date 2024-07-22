@@ -6,6 +6,42 @@
     box-sizing: border-box;
 }
 
+#navbar{
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+}
+
+#navtitle{
+    padding: 1rem;
+    background: gold;
+    border-radius: 2rem 2rem 0 0;
+}
+
+#selection{
+    list-style-type: none;
+}
+
+#selection li{
+    border-top: 1px solid #333;
+}
+
+#selection li a{
+    display: block;
+}
+
+#selection li:last-child a{
+    border-radius: 0 0 2rem 2rem;
+}
+
+#selection li a:hover, 
+#selection li a:focus{
+    background: #333;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
 a{
     text-decoration: none;
     cursor: pointer;
@@ -86,7 +122,6 @@ ul li:nth-child(even){
 
 ul ::marker{
     color: black;
-    content: "Interest: ";
 }
 
 p{
