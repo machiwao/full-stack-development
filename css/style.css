@@ -25,18 +25,19 @@
 
 #selection li{
     border-top: 1px solid #333;
+    display: inline-block;
+    margin-inline: 0.5rem;
 }
 
 #selection li a{
     display: block;
+    text-decoration: none;
 }
 
-#selection li:last-child a{
-    border-radius: 0 0 2rem 2rem;
-}
 
 #selection li a:hover, 
 #selection li a:focus{
+    text-decoration: underline;
     background: #333;
     color: whitesmoke;
     cursor: pointer;
